@@ -1,6 +1,7 @@
 script-dir: /etc/nodepool/scripts
 elements-dir: /etc/nodepool/elements
-images-dir: /opt/nodepool_dib
+# images-dir: /opt/nodepool_dib
+images-dir: /etc/nodepool_dib
 
 cron:
   cleanup: '*/1 * * * *'
