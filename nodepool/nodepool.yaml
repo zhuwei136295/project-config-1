@@ -1,7 +1,7 @@
 script-dir: /etc/nodepool/scripts
 elements-dir: /etc/nodepool/elements
-# images-dir: /opt/nodepool_dib
-images-dir: /etc/nodepool_dib
+images-dir: /opt/nodepool_dib
+#images-dir: /etc/nodepool_dib
 
 cron:
   cleanup: '*/1 * * * *'
@@ -43,10 +43,10 @@ diskimages:
 providers:
   - name: local_01
 #TODO: Update the provider username, password, and authurl
-    username: '<%= provider_username %>'
-    password: '<%= provider_password %>'
-    auth-url: 'http://<openstack cloud>:5000/v2.0'
-    project-name: 'admin'
+    username: 'cislave'
+    password: 'cislave'
+    auth-url: 'http://172.10.0.5:5000/v2.0'
+    project-name: 'cislave'
     max-servers: 2
     images:
       - name: dpc
