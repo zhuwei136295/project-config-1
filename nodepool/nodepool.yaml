@@ -39,6 +39,9 @@ diskimages:
       env-vars:
         TMPDIR: /opt/dib_tmp
         DIB_IMAGE_CACHE: /opt/dib_cache
+        http_proxy: http://127.0.0.1:8081
+        https_proxy: http://127.0.0.1:8081
+        no_proxy: localhost, 127.0.0.1
 
 providers:
   - name: local_01
