@@ -231,11 +231,11 @@ sudo rm -fr /tmp/zuul
 # This is in /usr instead of /usr/local due to this bug on precise:
 # https://bugs.launchpad.net/ubuntu/+source/python2.7/+bug/839588
 sudo -H virtualenv /usr/zuul-swift-logs-env
-sudo -H /usr/zuul-swift-logs-env/bin/pip install python-magic argparse \
+sudo -H /usr/zuul-swift-logs-env/bin/pip install --proxy http://127.0.0.1:8081 python-magic argparse \
     requests glob2
 
 # Create a virtualenv for os-testr (which contains subunit2html)
 # this is in /usr instead of /usr/loca/ due to this bug on precise:
 # https://bugs.launchpad.net/ubuntu/+source/python2.7/+bug/839588
 sudo -H virtualenv /usr/os-testr-env
-sudo -H /usr/os-testr-env/bin/pip install os-testr
+sudo -H /usr/os-testr-env/bin/pip install --proxy http://127.0.0.1:8081 os-testr
