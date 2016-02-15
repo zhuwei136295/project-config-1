@@ -28,7 +28,7 @@ cd /opt/nodepool-scripts/
 ./install_devstack_dependencies.sh
 
 # toci scripts use both of these
-sudo -H pip install gear os-apply-config
+sudo -H pip install --proxy http://127.0.0.1:8081 gear os-apply-config
 
 # tripleo-gate runs with two networks - the public access network and eth1
 # pointing at the in-datacentre L2 network where we can talk to the test
