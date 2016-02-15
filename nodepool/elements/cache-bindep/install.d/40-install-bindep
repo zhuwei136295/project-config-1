@@ -23,4 +23,4 @@ fi
 set -e
 
 sudo -H virtualenv /usr/bindep-env
-sudo -H /usr/bindep-env/bin/pip install bindep
+sudo -H /usr/bindep-env/bin/pip install --proxy http://127.0.0.1:8081 bindep
