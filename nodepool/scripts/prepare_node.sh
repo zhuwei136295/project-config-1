@@ -127,7 +127,7 @@ set -e
 cat >/tmp/forwarding.conf <<EOF
 forward-zone:
   name: "."
-  forward-addr: 8.8.8.8
+  forward-addr: 114.114.114.114
 EOF
 sudo mv /tmp/forwarding.conf /etc/unbound/
 sudo chown root:root /etc/unbound/forwarding.conf
