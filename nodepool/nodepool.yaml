@@ -53,7 +53,9 @@ providers:
     max-servers: 2
     use_neutron: True
     networks:
-      - name: net_ci
+      - name: net-ci
+        id: a5de72ad-d770-4f7c-a004-b32cf02f387d
+    pool: admin_floating_net
     images:
       - name: dpc
         min-ram: 8192
