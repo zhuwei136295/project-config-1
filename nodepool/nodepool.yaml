@@ -51,6 +51,8 @@ providers:
     auth-url: 'http://172.10.0.5:5000/v2.0'
     project-name: 'cislave'
     max-servers: 2
+    networks:
+      - name: net_ci
     images:
       - name: dpc
         min-ram: 8192
