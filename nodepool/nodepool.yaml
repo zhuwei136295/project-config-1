@@ -51,6 +51,7 @@ providers:
     auth-url: 'http://172.10.0.5:5000/v2.0'
     project-name: 'cislave'
     max-servers: 2
+    use_neutron: True
     networks:
       - name: net_ci
     images:
