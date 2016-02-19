@@ -49,7 +49,7 @@ providers:
     username: 'cislave'
     password: 'cislave'
     auth-url: 'http://172.10.0.5:5000/v2.0'
-    project-name: 'cislave'
+    project-name: 'dwj'
     max-servers: 2
     pool: admin_floating_net
     images:
