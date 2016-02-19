@@ -51,10 +51,6 @@ providers:
     auth-url: 'http://172.10.0.5:5000/v2.0'
     project-name: 'cislave'
     max-servers: 2
-    use_neutron: True
-    networks:
-      - name: net-ci
-        id: a5de72ad-d770-4f7c-a004-b32cf02f387d
     pool: admin_floating_net
     images:
       - name: dpc
