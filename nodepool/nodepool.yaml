@@ -51,10 +51,8 @@ providers:
     auth-url: 'http://172.10.0.5:5000/v2.0'
     project-name: 'dwj'
     max-servers: 2
-    use_neutron: True
     networks:
-      - name: net-ci
-        id: a5de72ad-d770-4f7c-a004-b32cf02f387d
+      - net-id: c0d490a3-dc20-4667-9321-96581047423
     pool: admin_floating_net
     images:
       - name: dpc
