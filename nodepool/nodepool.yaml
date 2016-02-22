@@ -52,7 +52,7 @@ providers:
     project-name: 'dwj'
     max-servers: 2
     networks:
-      - net-id: c0d490a3-dc20-4667-9321-96581047423
+      - net-id: c0d490a3-dc20-4667-9321-96581047423a
     pool: admin_floating_net
     images:
       - name: dpc
