@@ -36,5 +36,8 @@ mirrors =http://pypi.douban.com
 EOF
 
 #copy the squid.crt file
+if [ -f /usr/local/share/ca-certificates/squid.crt ]; then
+    rm /usr/local/share/ca-certificates/squid.crt
+fi
 cp ./squid.crt /usr/local/share/ca-certificates/
 sudo update-ca-certificates
