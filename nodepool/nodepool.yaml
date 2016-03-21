@@ -61,7 +61,23 @@ providers:
         diskimage: dpc
         username: jenkins
         private-key: '/home/nodepool/.ssh/id_rsa'
-
+  - name: local_01
+#TODO: Update the provider username, password, and authurl
+    username: 'admin'
+    password: 'console'
+    auth-url: 'http://192.168.10.51:5000/v2.0'
+    project-name: 'admin'
+    max-servers: 2
+    networks:
+      - net-id: c0d490a3-dc20-4667-9321-96581047423a
+    pool: admin_floating_net
+    images:
+      - name: dpc
+        min-ram: 8192
+        diskimage: dpc
+        username: jenkins
+        private-key: '/home/nodepool/.ssh/id_rsa'
+        
 targets:
   - name: jenkins1
     jenkins:
