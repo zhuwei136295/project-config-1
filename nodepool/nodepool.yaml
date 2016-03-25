@@ -24,7 +24,7 @@ labels:
     image: dpc
     min-ready: 1
     providers:
-      - name: local_01
+      - name: local_02
     ready-script: prepare_network_server.sh
 
 diskimages:
@@ -61,7 +61,7 @@ providers:
         diskimage: dpc
         username: jenkins
         private-key: '/home/nodepool/.ssh/id_rsa'
-  - name: local_01
+  - name: local_02
 #TODO: Update the provider username, password, and authurl
     username: 'admin'
     password: 'console'
@@ -70,7 +70,7 @@ providers:
     max-servers: 2
     networks:
       - net-id: a4080be0-9d99-4283-b735-43deb15afe38
-    pool: admin_floating_net
+    pool: ext-net
     images:
       - name: dpc
         min-ram: 8192
