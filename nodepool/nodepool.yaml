@@ -80,3 +80,5 @@ providers:
         
 targets:
   - name: jenkins1
+    jenkins:
+      - test-job
