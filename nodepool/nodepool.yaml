@@ -24,7 +24,7 @@ labels:
     image: dpc
     min-ready: 1
     providers:
-      - name: local_02
+      - name: local_01
     ready-script: prepare_network_server.sh
 
 diskimages:
@@ -45,7 +45,7 @@ diskimages:
         no_proxy: localhost, 127.0.0.1
 
 providers:
-  - name: local_01
+  - name: local_02
 #TODO: Update the provider username, password, and authurl
     username: 'cislave'
     password: 'cislave'
@@ -61,7 +61,7 @@ providers:
         diskimage: dpc
         username: jenkins
         private-key: '/home/nodepool/.ssh/id_rsa'
-  - name: local_02
+  - name: local_01
 #TODO: Update the provider username, password, and authurl
     username: 'admin'
     password: 'console'
