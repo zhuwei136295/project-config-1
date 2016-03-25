@@ -45,22 +45,22 @@ diskimages:
         no_proxy: localhost, 127.0.0.1
 
 providers:
-  - name: local_02
+#  - name: local_02
 #TODO: Update the provider username, password, and authurl
-    username: 'cislave'
-    password: 'cislave'
-    auth-url: 'http://172.10.0.5:5000/v2.0'
-    project-name: 'dwj'
-    max-servers: 2
-    networks:
-      - net-id: c0d490a3-dc20-4667-9321-96581047423a
-    pool: admin_floating_net
-    images:
-      - name: dpc
-        min-ram: 8192
-        diskimage: dpc
-        username: jenkins
-        private-key: '/home/nodepool/.ssh/id_rsa'
+#    username: 'cislave'
+#    password: 'cislave'
+#    auth-url: 'http://172.10.0.5:5000/v2.0'
+#    project-name: 'dwj'
+#    max-servers: 2
+#    networks:
+#      - net-id: c0d490a3-dc20-4667-9321-96581047423a
+#    pool: admin_floating_net
+#    images:
+#      - name: dpc
+#        min-ram: 8192
+#        diskimage: dpc
+#        username: jenkins
+#        private-key: '/home/nodepool/.ssh/id_rsa'
   - name: local_01
 #TODO: Update the provider username, password, and authurl
     username: 'admin'
