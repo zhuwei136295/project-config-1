@@ -64,13 +64,13 @@ providers:
   - name: local_01
 #TODO: Update the provider username, password, and authurl
     username: 'admin'
-    password: 'console'
-    auth-url: 'http://192.168.10.51:5000/v2.0'
+    password: 'admin'
+    auth-url: 'http://172.10.0.3:5000/v2.0'
     project-name: 'admin'
     max-servers: 2
     networks:
-      - net-id: a4080be0-9d99-4283-b735-43deb15afe38
-    pool: ext-net
+      - net-id: 8c3e2250-8baa-4bcb-a084-8ef24f095882
+    pool: admin_floating_net
     images:
       - name: dpc
         min-ram: 8192
