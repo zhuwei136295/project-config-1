@@ -17,6 +17,7 @@
 # limitations under the License.
 
 #modify the DNS
+sudo su
 cd /etc
 echo "namespace 114.114.114.114" > /etc/resolv.conf
 
