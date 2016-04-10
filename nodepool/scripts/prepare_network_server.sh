@@ -17,16 +17,16 @@
 # limitations under the License.
 
 #modify the DNS
-sudo su
-cd /etc
-echo "namespace 114.114.114.114" > /etc/resolv.conf
+sudo cat > /etc/resolv.conf <<EOF
+namespace 114.114.114.114
+EOF
 
 #modify the pip resource
 if [ ! -f /etc/pip.conf ]; then
-    touch /etc/pip.conf
+    sudo touch /etc/pip.conf
 fi
 
-cat > /etc/pip.conf <<EOF
+sudo cat > /etc/pip.conf <<EOF
 [global]
 trusted-host = pypi.douban.com
 index-url = http://pypi.douban.com/simple
@@ -38,7 +38,7 @@ EOF
 
 #copy the squid.crt file
 if [ -f /usr/local/share/ca-certificates/squid.crt ]; then
-    rm /usr/local/share/ca-certificates/squid.crt
+    sudo rm /usr/local/share/ca-certificates/squid.crt
 fi
-cp ./squid.crt /usr/local/share/ca-certificates/
+sudo cp ./squid.crt /usr/local/share/ca-certificates/
 sudo update-ca-certificates
