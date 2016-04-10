@@ -25,7 +25,7 @@ labels:
     min-ready: 1
     providers:
       - name: local_01
-    ready-script: prepare_network_server.sh
+    ready-script: prepare_network.sh
 
 diskimages:
     - name: dpc
