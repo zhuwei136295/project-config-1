@@ -69,7 +69,8 @@ providers:
     project-name: 'admin'
     max-servers: 2
     networks:
-      - net-id: 8c3e2250-8baa-4bcb-a084-8ef24f095882
+      - name: admin_internal_net
+        public: True
     pool: admin_floating_net
     images:
       - name: dpc
