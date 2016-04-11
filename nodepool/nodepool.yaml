@@ -69,9 +69,9 @@ providers:
     project-name: 'admin'
     max-servers: 2
     networks:
-      - name: admin_internal_net
+      - name: admin_floating_net
         public: True
-    pool: admin_floating_net
+    #pool: admin_floating_net
     images:
       - name: dpc
         min-ram: 8192
